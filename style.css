@@ -1,0 +1,97 @@
+*{
+    text-align: center;
+    transition-duration: 100ms;
+}
+body{
+    background-color: #030034;
+}
+h1{
+    color: blue;
+}
+p{
+    color: white;
+    font-size: 20px;
+}
+img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+h2{
+    color: white;
+    font-size: 30px;
+    margin-top: 20px;
+}
+a{
+    color: #00ff77;
+    transition-duration: 100ms;
+    text-decoration: none;
+}
+a:visited {
+    color: #00ff77; /* Change link color after visiting */
+    text-decoration: none; /* Remove underline for visited links */
+    transition-duration: 300ms;
+}
+a:active {
+    color: #00ff77;
+    text-decoration: none; /* Remove underline on click */
+    transition-duration: 300ms;
+}
+a:hover {
+    color: red; /* Change link color on hover */
+    text-decoration: underline; /* Underline links on hover */
+    transition-duration: 300ms;
+}
+/* Styles for the main container to center everything */
+.header-container {
+    display: flex;             /* Make it a flex container */
+    justify-content: center;   /* Center its children horizontally */
+    width: 100%;               /* Ensure it takes full width to center effectively */
+    margin-bottom: 20px;       /* Add some space below the header section */
+}
+
+/* 1. Outer Flex Container: Centers the entire heading unit horizontally */
+.header-section {
+    display: flex;             /* Make this a flex container */
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 20px;
+    margin-top: 20px;          
+}
+
+/* 2. Inner Flex Container: Makes H1 and Image sit side-by-side */
+.heading-with-logo {
+    display: flex;             /* Make this a flex container */
+    align-items: center;       /* Vertically align the H1 and Image to their middle */
+    gap: 10px;                 /* Adds 10px space between the H1 and the image */
+    /* If the heading text is long and you want to prevent wrapping on one line,
+       you could add 'white-space: nowrap;' to the h1 itself, but use with caution
+       as it can cause overflow on very small screens. */
+}
+
+/* Style the H1 and Image */
+.heading-with-logo h1 {
+    margin: 0; /* Remove default margin */
+    color: blue;     /* Example text color */
+    line-height: 1;      /* Helps with vertical alignment if font has large line-height */
+}
+
+.heading-with-logo img {
+    height: 60px;        /* Adjust this to control the height of your logo */
+    width: auto;         /* Maintain the image's aspect ratio */
+    /* The align-items: center on the parent handles vertical alignment,
+       but vertical-align: middle; is a good fallback for inline-block elements. */
+    vertical-align: middle;
+}
+.cyan {
+    color: #00ffdd;
+}
+.red {
+    color: #ff0000;
+}
+.gray {
+    color: #808080;
+}
+.whitered {
+    color: #ffcfcf;
+}
